@@ -2,7 +2,7 @@
 
 @section('content')
     <publish-form
-        title="Thumbnail Settings"
+        title="{{ __('thumbnails::thumbnails.settings.title') }}"
         action="{{ cp_route('thumbnails.settings') }}"
         :blueprint='@json($blueprint)'
         :meta='@json($meta)'
@@ -11,8 +11,8 @@
 
     <div class="thumbnails-preview">
 
-        <h2>Preview</h2>
-        <p>This is what a collection item would look like if you shared it on social media.</p>
+        <h2>{{ __('thumbnails::thumbnails.settings.preview.title') }}</h2>
+        <p>{{ __('thumbnails::thumbnails.settings.preview.description') }}</p>
 
         <div class="thumbnails-social-cards">
             <div class="thumbnails-social-cards--card-twitter thumbnails-social-cards--card">

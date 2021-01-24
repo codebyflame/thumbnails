@@ -20,14 +20,16 @@ class ThumbnailsBlueprint implements Blueprint
                             'handle' => 'text_color',
                             'field' => [
                                 'type' => 'color',
-                                'display' => 'Text color'
+                                'display' => __('thumbnails::thumbnails.fields.text_color.display'),
+                                'localizable' => true
                             ]
                         ],
                         [
                             'handle' => 'background_color',
                             'field' => [
                                 'type' => 'color',
-                                'display' => 'Background color'
+                                'display' => __('thumbnails::thumbnails.fields.background_color.display'),
+                                'localizable' => true
                             ]
                         ]
                     ]

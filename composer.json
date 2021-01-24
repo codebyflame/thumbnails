@@ -1,6 +1,16 @@
 {
     "name": "codebyflame/thumbnails",
     "description": "Generates social media thumbnail images based on the title of a collection item",
+    "version": "1.0.1",
+    "type": "statamic-addon",
+    "keywords": [
+        "Statamic",
+        "opengraph",
+        "twitter",
+        "facebook",
+        "thumbnails",
+        "CodeByFlame"
+    ],
     "autoload": {
         "psr-4": {
             "CodeByFlame\\Thumbnails\\": "src"
@@ -8,7 +18,8 @@
     },
     "authors": [
         {
-            "name": "Flame"
+            "name": "Flame",
+            "email": "asko@hey.com"
         }
     ],
     "support": {

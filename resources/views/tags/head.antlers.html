@@ -1,0 +1,16 @@
+<!-- Start page content -->
+{{ if thumbnail_path }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    {{ if description }}
+    <meta name="twitter:description" content="{{ description }}">
+    {{ /if }}
+    <meta name="twitter:image" content="{{ thumbnail_path }}">
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:url" content="{{ permalink }}" />
+    {{ if description }}
+    <meta property="og:description" content="{{ description }}" />
+    {{ /if }}
+    <meta property="og:image" content="{{ thumbnail_path }}" />
+{{ /if }}
+<!-- End page content -->

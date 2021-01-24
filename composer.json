@@ -1,0 +1,33 @@
+{
+    "name": "codebyflame/thumbnails",
+    "description": "Generates social media thumbnail images based on the title of a collection item",
+    "autoload": {
+        "psr-4": {
+            "CodeByFlame\\Thumbnails\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Flame"
+        }
+    ],
+    "support": {
+        "email": "asko@hey.com"
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "ext-fileinfo": "*",
+        "ext-gd": "*"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Thumbnails",
+            "description": "Generates social media thumbnail images based on the title of a collection item"
+        },
+        "laravel": {
+            "providers": [
+                "CodeByFlame\\Thumbnails\\ServiceProvider"
+            ]
+        }
+    }
+}
